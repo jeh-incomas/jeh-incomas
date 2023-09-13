@@ -1,7 +1,7 @@
 #Login information for Microsoft Graph
-$ApplicationId = "ac7033f1-d7e2-42cb-af91-0097e1a0f98e"
+$ApplicationId = ""
 $SecuredPassword = ""
-$tenantID = "c73d96b1-6027-4cc1-a660-f54e7637c142"
+$tenantID = ""
 
 $SecuredPasswordPassword = ConvertTo-SecureString `
 -String $SecuredPassword -AsPlainText -Force
