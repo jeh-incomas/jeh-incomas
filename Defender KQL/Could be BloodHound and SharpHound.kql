@@ -1,0 +1,14 @@
+DeviceEvents
+| where ActionType == "LdapSearch"
+| extend JSON = parse_json(AdditionalFields)
+| extend AttributeList = JSON.AttributeList
+| extend ScopeOfSearch = JSON.ScopeOfSearch
+| extend SearchFilter = JSON.SearchFilter
+// Various LDAP searching methods usually associated with BloodHound/SharpHound
+| where AttributeList has_all("samaccounttype","objectsid","objectclass") and SearchFilter has "objectlass=*" or
+//
+AttributeList has_all('"AttributeList":["samaccounttype","objectsid","objectguid","objectclass","samaccountname","msds-groupmsamembership"]') and SearchFilter has "objectclass=container" or
+//
+AttributeList has_all("trustattributes","securityidentifier","trustdirection","trusttype","cn") and SearchFilter has "objectclass=trusteddomain" or
+//
+AdditionalFields has "admincount"

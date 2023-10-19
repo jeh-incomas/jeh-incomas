@@ -1,0 +1,11 @@
+// This query looks for Tor client, or for a common Tor plugin called Meek.
+// We query for active Tor connections, but could have alternatively looked for active Tor runs (ProcessCreateEvents) or Tor downloads (DeviceFileEvents).
+// To read more about this technique, see:.
+// Tor: https://attack.mitre.org/wiki/Software/S0183#Techniques_Used.
+// Meek plugin: https://attack.mitre.org/wiki/Software/S0175.
+// Multi-hop proxy technique: https://attack.mitre.org/wiki/Technique/T1188.
+// Tags: #Tor, #MultiHopProxy, #CnC.
+// This query was updated from https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender/Command%20and%20Control/Tor.yaml
+DeviceNetworkEvents  
+| where InitiatingProcessFileName in~ ("tor.exe", "meek-client.exe")
+| project DeviceName, Timestamp, ReportId, DeviceId

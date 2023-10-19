@@ -1,0 +1,4 @@
+union withsource=SourceTable EmailAttachmentInfo, DeviceProcessEvents, DeviceNetworkEvents, DeviceFileEvents, DeviceRegistryEvents, DeviceLogonEvents, DeviceImageLoadEvents, DeviceEvents
+| extend ReportId = coalesce(tostring(column_ifexists("ReportId", "")),column_ifexists("ReportId_string", ""),tostring(column_ifexists("ReportId_long","")))
+| where SHA256 in ("a66d1021e54269963e9a54892869d569ffa1c74d9fb1b67f023ea5fdfd90c1a6", "d9770865ea739a8f1702a2651538f4f4de2d92888d188d8ace2c79936f9c2688", "912018ab3c6b16b39ee84f17745ff0c80a33cee241013ec35d0281e40c0658d9") or InitiatingProcessSHA256 in ("a66d1021e54269963e9a54892869d569ffa1c74d9fb1b67f023ea5fdfd90c1a6", "d9770865ea739a8f1702a2651538f4f4de2d92888d188d8ace2c79936f9c2688", "912018ab3c6b16b39ee84f17745ff0c80a33cee241013ec35d0281e40c0658d9")
+| sort by Timestamp desc

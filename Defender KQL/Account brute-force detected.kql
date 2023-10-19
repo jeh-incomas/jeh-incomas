@@ -1,0 +1,16 @@
+// Query #1: Look for public IP addresses that failed to logon to a computer multiple times, using multiple accounts, and eventually succeeded.
+// This query was updated from https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender/Lateral%20Movement/Account%20brute%20force.yaml
+DeviceLogonEvents
+| where isnotempty(RemoteIP) 
+    and AccountName !endswith "$"
+    and RemoteIPType == "Public"
+| extend Account=strcat(AccountDomain, "\\", AccountName)
+| summarize 
+    Successful=countif(ActionType == "LogonSuccess"),
+    Failed = countif(ActionType == "LogonFailed"),
+    FailedAccountsCount = dcountif(Account, ActionType == "LogonFailed"),
+    SuccessfulAccountsCount = dcountif(Account, ActionType == "LogonSuccess"),
+    FailedAccounts = makeset(iff(ActionType == "LogonFailed", Account, ""), 5),
+    SuccessfulAccounts = makeset(iff(ActionType == "LogonSuccess", Account, ""), 5)
+    by DeviceName, RemoteIP, RemoteIPType, DeviceId, Timestamp, ReportId, AccountName
+| where Failed > 10 and Successful > 0 and FailedAccountsCount > 2 and SuccessfulAccountsCount == 1
