@@ -21,4 +21,3 @@ Get-ChildItem -Path $sourceFolder -Recurse -File -Filter "*.csv" | ForEach-Objec
         Write-Host "Moved file: $($_.Name)" >> C:\FileValidation\log.txt
     }
 }
-```
