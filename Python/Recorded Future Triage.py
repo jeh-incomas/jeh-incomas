@@ -1,8 +1,8 @@
-import requests
 import json
+import requests
 
 # Set your Recorded Future API key
-api_key = "c3d6c3f92c11c2d173b8fa353c082ab794bdd510"
+api_key = "YOUR_API_KEY"
 
 # Define the Recorded Future API endpoint
 api_url = "https://sandbox.recordedfuture.com/api/v0/"
@@ -11,21 +11,13 @@ api_url = "https://sandbox.recordedfuture.com/api/v0/"
 website = "https://www.example.com"  # Replace with the actual website URL
 
 # Define the query parameters
-params = {
-    "url": website,
-    "format": "json"
-}
+try:
+    response = requests.get(api_url, params=params, headers=headers)
+except Exception as e:
+    print(f"An error occurred while making the API request: {e}")
+    response = None
 
-# Set the headers with the API key
-headers = {
-    "X-RFToken": api_key
-}
-
-# Make the API request
-response = requests.get(api_url, params=params, headers=headers)
-
-# Check if the request was successful
-if response.status_code == 200:
+if response and response.status_code == 200:
     # Parse the JSON response
     data = response.json()
     # Print the results
