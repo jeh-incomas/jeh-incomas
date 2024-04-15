@@ -2,7 +2,7 @@ import json
 import requests
 
 # Set your Recorded Future API key
-api_key = "YOUR_API_KEY"
+api_key = "c3d6c3f92c11c2d173b8fa353c082ab794bdd510"
 
 # Define the Recorded Future API endpoint
 api_url = "https://sandbox.recordedfuture.com/api/v0/"
