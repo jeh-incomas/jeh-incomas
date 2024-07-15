@@ -1,3 +1,9 @@
+#Instructions:
+# Replace your_access_token with your actual access token (ensure it has the necessary permissions to read emails and attachments).
+# Set subject_to_search to the desired subject line (e.g., “XXXX”).
+# Adjust the download_folder to your preferred location for saving attachments.
+# Run the script, and it will download any new attachments with the specified subject line.
+
 import os
 import requests
 import base64
