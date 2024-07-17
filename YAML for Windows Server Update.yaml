@@ -34,7 +34,7 @@
     # Step 2: Download and Install MSI
     - name: Download the MSI file
       ansible.builtin.win_get_url:
-        url: "http://vmwiniis01/your.msi"
+        url: "http://xxxxxx/your.msi"
         dest: "C:\\Temp\\your.msi"
 
     - name: Install the MSI file
