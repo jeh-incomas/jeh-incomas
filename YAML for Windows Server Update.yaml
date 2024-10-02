@@ -1,0 +1,47 @@
+#YAML for Windows Server Update
+- name: Update Windows Servers and Install MSI
+  hosts: windows_servers
+  tasks:
+    # Step 1: Windows Updates
+    - name: Install Windows updates
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - DefinitionUpdates
+        state: installed
+      register: update_result
+
+    - name: Wait for updates to complete
+      async: 600
+      poll: 0
+      when: update_result.changed
+
+    - name: Check if a reboot is required
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - DefinitionUpdates
+        state: reboot_required
+      register: reboot_result
+      ignore_errors: yes
+
+    - name: Reboot if necessary
+      ansible.builtin.reboot:
+        when: reboot_result.reboot_required
+
+    # Step 2: Download and Install MSI
+    - name: Download the MSI file
+      ansible.builtin.win_get_url:
+        url: "http://xxxxxx/your.msi"
+        dest: "C:\\Temp\\your.msi"
+
+    - name: Install the MSI file
+      ansible.windows.win_msi:
+        path: "C:\\Temp\\your.msi"
+        wait: yes
+
+    - name: Display update results
+      debug:
+        var: update_result
