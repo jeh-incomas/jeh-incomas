@@ -18,7 +18,7 @@
 <!-- ══════════════════════════ SECURITY ══════════════════════════ -->
 <div align="center">
 
-### 🛡️ Repository Security Team
+### 🛡️ 
 
 <img src="https://raw.githubusercontent.com/jeh-incomas/jeh-incomas/main/cat-security.jpg" alt="Cat Security — Head of Access Control" width="420" />
 
