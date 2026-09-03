@@ -108,12 +108,6 @@ fun_fact:  the cat above has
 <div align="center">
 
 ### 📈 Contribution Graph
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=jeh-incomas&theme=tokyo-night&hide_border=true&bg_color=00000000&color=36BCF7&line=36BCF7&point=ffffff&area=true" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jeh-incomas&theme=github-light&hide_border=true&bg_color=00000000&area=true" alt="activity graph" width="100%" />
-</picture>
-
 <!-- Snake animation — powered by .github/workflows/snake.yml -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jeh-incomas/jeh-incomas/output/github-snake-dark.svg" />
@@ -121,72 +115,6 @@ fun_fact:  the cat above has
 </picture>
 
 </div>
-
-<!-- ══════════════════════════ COLLAPSIBLES ══════════════════════════ -->
-<div align="center">
-
-### 🗂️ More About Me
-
-</div>
-
-<details>
-<summary><b>🧠 &nbsp;How I like to work</b></summary>
-<br/>
-
-| Principle | In practice |
-| :-- | :-- |
-| **Automate it** | If I do it twice by hand, it becomes a script |
-| **Boring tech** | Proven tools beat shiny ones on a deadline |
-| **Readable > clever** | Future me is not impressed by one-liners |
-| **Ship small** | Tiny PRs, fast feedback, fewer surprises |
-| **Data first** | Fix the source, not the dashboard |
-
-</details>
-
-<details>
-<summary><b>🎧 &nbsp;Currently</b></summary>
-<br/>
-
-```text
-▶  Building    ████████████████████░░░░  data tooling
-▶  Learning    ██████████████░░░░░░░░░░  system design
-▶  Reading     ██████████░░░░░░░░░░░░░░  docs, always docs
-▶  Debugging   ████████████████████████  it never ends
-```
-
-</details>
-
-<details>
-<summary><b>😼 &nbsp;Cat Security — Incident Log</b></summary>
-<br/>
-
-| Time | Incident | Resolution |
-| :-- | :-- | :-- |
-| `09:02` | Sat on keyboard during deploy | Rolled back, blamed DNS |
-| `11:47` | Rejected PR #42 (no reason given) | Approved via override |
-| `14:15` | Blocked access to the mouse | Escalated to snacks |
-| `23:58` | Full perimeter patrol | ✅ All clear |
-
-</details>
-
-<br/>
-
-<!-- ══════════════════════════ CONNECT ══════════════════════════ -->
-<div align="center">
-
-### 🤝 Connect
-
-<a href="https://github.com/jeh-incomas">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-<a href="https://www.linkedin.com/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="mailto:jeh@in-commodities.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-<br/><br/>
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="quote" />
 
