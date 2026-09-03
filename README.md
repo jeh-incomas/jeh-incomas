@@ -1,7 +1,7 @@
 <!-- ══════════════════════════ HEADER ══════════════════════════ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Jannick%20Hald&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=Data%20%C2%B7%20Energy%20%C2%B7%20Commodities&descSize=18&descAlignY=55&animation=fadeIn" width="100%" alt="header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Jannick%20Hald&fontSize=60&fontColor=ffffff&fontAlignY=35&desc=Made%20%C2%B7%20With%20%C2%B7%20Claude&descSize=18&descAlignY=55&animation=fadeIn" width="100%" alt="header"/>
 
 <a href="https://github.com/jeh-incomas">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=560&lines=Turning+messy+data+into+decisions;Automating+the+boring+parts;Powered+by+coffee+and+curiosity;Guarded+by+a+very+serious+cat" alt="Typing SVG" />
