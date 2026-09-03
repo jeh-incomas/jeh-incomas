@@ -49,12 +49,7 @@ fun_fact:  the cat above has
 <td width="45%" valign="top">
 
 ### ⚡ Quick Facts
-
-- 🔭 &nbsp;Working on **data pipelines & tooling**
-- 🌱 &nbsp;Learning **whatever the problem demands**
-- 💬 &nbsp;Ask Claude about **Python, SQL, automation**
-- ⚙️ &nbsp;I like **small tools that do one thing well**
-- 🐱 &nbsp;My code reviewer has whiskers
+- 🌱 &nbsp;Currently on vacation
 
 </td>
 </tr>
@@ -115,10 +110,7 @@ fun_fact:  the cat above has
 </picture>
 
 </div>
-<center
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="quote" />
-</center>
-<br/>
+
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=140&section=footer" width="100%" alt="footer"/>
 
