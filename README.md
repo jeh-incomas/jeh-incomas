@@ -37,8 +37,7 @@
 
 ```yaml
 name:      Jannick Hald
-role:      Data / Analytics
-domain:    Energy & Commodities
+role:      IT Security Specialist
 location:  Denmark 🇩🇰
 currently: building things that
            run while I sleep
@@ -53,7 +52,7 @@ fun_fact:  the cat above has
 
 - 🔭 &nbsp;Working on **data pipelines & tooling**
 - 🌱 &nbsp;Learning **whatever the problem demands**
-- 💬 &nbsp;Ask me about **Python, SQL, automation**
+- 💬 &nbsp;Ask Claude about **Python, SQL, automation**
 - ⚙️ &nbsp;I like **small tools that do one thing well**
 - 🐱 &nbsp;My code reviewer has whiskers
 
